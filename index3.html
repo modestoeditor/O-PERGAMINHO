@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capítulo III</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💖 Capítulo III — O Coração do Herói</h1>
+    <p><em>Após aventuras, flertes e uma jornada de palavras mágicas, Sir Lucen encara o momento final da sua missão.</em></p>
+
+    <label>Enigma Final: Complete a profecia antiga:<br>“Você é a minha ________ dos sonhos.”</label>
+    <input id="resposta3" type="text" placeholder="Digite a resposta">
+    <button onclick="verificarResposta()">Finalizar</button>
+
+    <div id="mensagemFinal" class="final" style="display: none;">
+      <p>✦ Que esta lenda dê início ao mais belo capítulo da nossa história ✦</p>
+    </div>
+  </div>
+
+  <script>
+    function verificarResposta() {
+      const resposta = document.getElementById("resposta3").value.trim().toUpperCase();
+      if (resposta === "MULHER") {
+        document.getElementById("mensagemFinal").style.display = "block";
+      } else {
+        alert("Resposta incorreta. Tente novamente!");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capítulo II</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>⚔️ Capítulo II — O Vento da Discórdia</h1>
+    <p><em>Espalhou-se um rumor: "Sir Lucen jamais conquistará Lady Élinor." Sentindo-se traída pelas entrelinhas do destino, Lady Élinor fechou seu coração com um sentimento amargo.</em></p>
+
+    <label>Enigma: Que emoção dominou o coração dela, ainda que fosse só defesa contra o que sentia de verdade?</label>
+    <input id="resposta2" type="text" placeholder="Digite a resposta">
+    <button onclick="verificarResposta()">Avançar</button>
+  </div>
+
+  <script>
+    function verificarResposta() {
+      const resposta = document.getElementById("resposta2").value.trim().toUpperCase();
+      if (resposta === "ÓDIO" || resposta === "ODIO") {
+        window.location.href = "index3.html";
+      } else {
+        alert("Resposta incorreta. Tente novamente!");
+      }
+    }
+  </script>
+</body>
+</html>

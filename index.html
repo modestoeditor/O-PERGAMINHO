@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capítulo I</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🏰 Capítulo I — Os Sinais Invisíveis</h1>
+    <p><em>No Reino do Cotidiano, Sir Lucen tentava encantar a bela Lady Élinor com gestos sutis e palavras suaves. Mas seus encantos pareciam invisíveis para ela.</em></p>
+
+    <label>Enigma: Como se chamam essas manifestações silenciosas que apenas olhos atentos percebem?</label>
+    <input id="resposta1" type="text" placeholder="Digite a resposta">
+    <button onclick="verificarResposta()">Avançar</button>
+  </div>
+
+  <script>
+    function verificarResposta() {
+      const resposta = document.getElementById("resposta1").value.trim().toUpperCase();
+      if (resposta === "SINAIS") {
+        window.location.href = "index2.html";
+      } else {
+        alert("Resposta incorreta. Tente novamente!");
+      }
+    }
+  </script>
+</body>
+</html>

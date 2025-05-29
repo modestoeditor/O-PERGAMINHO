@@ -1,0 +1,87 @@
+body {
+  font-family: 'Garamond', serif;
+  background: #f4f1ea url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  margin: 0;
+  padding: 2rem;
+  color: #2c1a00;
+}
+.container {
+  max-width: 650px;
+  margin: auto;
+  background: #faf3dc;
+  padding: 2rem;
+  border: 4px solid #5c3a21;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+h1, h2 {
+  text-align: center;
+  color: #4b2e14;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  border: 2px solid #8b5a2b;
+  border-radius: 5px;
+  background-color: #fff7e6;
+  box-sizing: border-box;
+}
+button {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.4rem;
+  background-color: #7a4e24;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #a46a37;
+}
+.final {
+  margin-top: 3rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #5c3317;
+  background-color: #fff1cc;
+  padding: 1rem;
+  border: 2px dashed #7a4e24;
+  border-radius: 8px;
+}
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  label {
+    font-size: 1rem;
+  }
+  input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  .final {
+    font-size: 1rem;
+  }
+}
